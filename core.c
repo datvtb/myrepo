@@ -2,7 +2,11 @@
 #include <string.h>	//B
 #include <string.h>	//A
 
+#define DELAY_PERIOD 3000  //C
+#define TIMEOUT 5000  //C
+
 #define MAX 100	//A
+
 int sum(int, int);	//B
 
 int main(int argc, char ** argv)
