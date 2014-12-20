@@ -1,18 +1,20 @@
 #include <stdio.h>
-#include <string.h>	//B
-#include <string.h>	//A
+#include <conio.h>
 
-#define DELAY_PERIOD 3000  //C
-#define TIMEOUT 5000  //C
+#define REG_A 0x01
+#define REG_B 0x02
+#define REG_C 0x03
 
-#define MAX 100	//A
+#ifdef VERSION2
+#define REG_D 0x04
+#define REG_E 0x05
+#endif
 
 int sum(int, int);	//B
 
-int main(int argc, char ** argv)
+int main(void)
 {
   int x, y;	//B
-  printf("Hello World GitHub\n");
 
   //B
   printf("\nEnter x = ");
